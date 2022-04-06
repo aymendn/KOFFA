@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../../widgets/custom_icon.dart';
 import '../about_screen.dart';
@@ -11,7 +12,6 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return SafeArea(
       child: Scaffold(
         body: Column(
@@ -48,10 +48,14 @@ class HomeScreen extends StatelessWidget {
                           },
                         ),
                         const Spacer(),
-                        const CustomIcon(
+                        CustomIcon(
                           image: 'assets/icons/logout-white.png',
                           height: 60,
                           isGradient: true,
+                          onTap: () {
+                            SystemChannels.platform
+                                .invokeMethod('SystemNavigator.pop');
+                          },
                         )
                       ],
                     ),

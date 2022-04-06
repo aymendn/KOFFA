@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'providers/foods.dart';
@@ -16,6 +17,16 @@ import 'package:provider/provider.dart';
 import 'constants.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+
+// set a list of alowed Orientations:
+  SystemChrome.setPreferredOrientations(
+    [
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ],
+  );
+
   runApp(const MyApp());
 }
 
