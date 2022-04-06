@@ -84,6 +84,7 @@ class NeedyDemandScreen extends StatelessWidget {
             onTapHome: () {
               Navigator.of(context).pushReplacementNamed('/');
             },
+            onTapText: Provider.of<FoodList>(context).clear,
           ),
         ),
       ),

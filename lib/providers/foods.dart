@@ -94,17 +94,27 @@ class FoodList with ChangeNotifier {
     return _foods.where((foodItem) => foodItem.category == category).toList();
   }
 
+  var initial = 100;
+
   int get credits {
     return _credits;
   }
 
   void updateCredits() {
-    _credits = 100;
+    _credits = initial;
     var sum = 0;
     for (var food in foods) {
       sum += food.price * food.count;
     }
     _credits -= sum;
+    notifyListeners();
+  }
+
+  void clear() {
+    initial = _credits;
+    for (var food in foods) {
+      food.count = 0;
+    }
     notifyListeners();
   }
 }
