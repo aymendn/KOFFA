@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../../constants.dart';
 import '../../widgets/custom_icon.dart';
@@ -100,11 +101,14 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
         ),
-        floatingActionButton: const CustomIcon(
+        floatingActionButton: CustomIcon(
           height: 62,
           width: 72,
           isShadow: true,
           image: 'assets/icons/logout.png',
+          onTap: () {
+            SystemChannels.platform.invokeMethod('SystemNavigator.pop');
+          },
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       ),
