@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../constants.dart';
-import '../widgets/custom_background.dart';
 import '../widgets/custom_icon.dart';
 
 class AboutScreen extends StatelessWidget {
@@ -11,37 +10,50 @@ class AboutScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomBackground(
-      image: 'assets/icons/info.png',
-      child: SingleChildScrollView(
+    return AlertDialog(
+      insetPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+      titlePadding: const EdgeInsets.all(25),
+      contentPadding: const EdgeInsets.symmetric(horizontal: 15),
+      actionsPadding: EdgeInsets.zero,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+      actionsAlignment: MainAxisAlignment.end,
+      title: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Image.asset(
+            'assets/icons/info.png',
+            width: 25,
+          ),
+          const SizedBox(width: 10),
+          const Text(
+            'حول التطبيق',
+            style: kTitleStyle,
+          ),
+        ],
+      ),
+      content: SingleChildScrollView(
         child: Column(
-          children: [
-              const SizedBox(height: 25),
-              const Text(
-                'حول التطبيق',
-                style: kTitleStyle,
-              ),
-              const SizedBox(height: 15),
-            const Text(
+          children: const [
+            SizedBox(height: 5),
+            Text(
               kAppDesciption,
               style: kTextStyle,
-            ),
-            Align(
-              alignment: Alignment.centerLeft,
-              child: CustomIcon(
-                image: 'assets/icons/back.png',
-                height: 50,
-                width: 60,
-                isGradient: true,
-                iconSize: 35,
-                onTap: () {
-                  Navigator.of(context).pop();
-                },
-              ),
             ),
           ],
         ),
       ),
+      actions: [
+        CustomIcon(
+          image: 'assets/icons/back.png',
+          height: 50,
+          width: 60,
+          isGradient: true,
+          iconSize: 35,
+          onTap: () {
+            Navigator.of(context).pop();
+          },
+        ),
+      ],
     );
   }
 }

@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -27,7 +29,7 @@ class RequestedItem extends StatelessWidget {
                   alignment: Alignment.centerRight,
                   padding: const EdgeInsets.symmetric(horizontal: 30),
                   child: Text(
-                    '${foodItem.count} ${getPrefix(foodItem.name)}',
+                    '${foodItem.count + Random().nextInt(15) + 1} ${getPrefix(foodItem.name)}',
                     style: const TextStyle(
                       color: kTextLightColor,
                       fontWeight: FontWeight.bold,
@@ -50,6 +52,13 @@ class RequestedItem extends StatelessWidget {
                         fontSize: 17),
                   ),
                   decoration: BoxDecoration(
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Color.fromARGB(31, 121, 121, 121),
+                        blurRadius: 2,
+                        spreadRadius: 1,
+                      ),
+                    ],
                     borderRadius: BorderRadius.circular(20),
                     color: kWhiteColor,
                   ),
@@ -63,7 +72,6 @@ class RequestedItem extends StatelessWidget {
               return CustomIcon(
                 textColor: item.bought ? kWhiteColor : kBlueColor,
                 color: item.bought ? kBlueColor : kWhiteColor,
-                
                 isIcon: false,
                 height: 45,
                 width: 100,

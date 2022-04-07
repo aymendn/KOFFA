@@ -1,8 +1,13 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 import '../constants.dart';
+import '../providers/food.dart' as type;
 import '../widgets/bold_title.dart';
 import '../widgets/bottom_buttons.dart';
+import '../widgets/custom_icon.dart';
+import '/logic.dart';
 
 class FamilyDetails extends StatelessWidget {
   const FamilyDetails({Key? key}) : super(key: key);
@@ -12,6 +17,7 @@ class FamilyDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final index = ModalRoute.of(context)?.settings.arguments;
+    final randomGeneratedList = generateRandomFoodList();
     return SafeArea(
       child: Scaffold(
         body: Column(
@@ -27,9 +33,9 @@ class FamilyDetails extends StatelessWidget {
             ),
             Expanded(
               child: ListView.builder(
-                itemCount: 6,
+                itemCount: Random().nextInt(11) + 1,
                 itemBuilder: (BuildContext context, int index) {
-                  return FoodItem(index: index);
+                  return FoodItem(item: randomGeneratedList[index]);
                 },
               ),
             ),
@@ -51,8 +57,8 @@ class FamilyDetails extends StatelessWidget {
             ],
           ),
           child: BottomButtons(
-            isTextButton: false,
-            textButtonWidth: 200,
+            text: 'تأكيد التسليم',
+            textButtonWidth: 150,
             vertpadd: 5,
             horpadd: 10,
             onTapBack: () {
@@ -61,6 +67,38 @@ class FamilyDetails extends StatelessWidget {
             onTapHome: () {
               Navigator.of(context).pop();
               Navigator.of(context).pushReplacementNamed('/');
+            },
+            onTapText: () {
+              showDialog(
+                context: context,
+                builder: (_) => AlertDialog(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15)),
+                  alignment: Alignment.center,
+                  title: const Icon(
+                    Icons.check_circle_rounded,
+                    color: kBlueColor,
+                    size: 60,
+                  ),
+                  content: const Text(
+                    'تم تأكيد التسليم بنجاح',
+                    style: kTextStyle,
+                    textAlign: TextAlign.center,
+                  ),
+                  actions: [
+                    CustomIcon(
+                      height: 40,
+                      width: 120,
+                      isGradient: true,
+                      isIcon: false,
+                      text: 'إغلاق',
+                      onTap: () {
+                        Navigator.of(context).pop();
+                      },
+                    ),
+                  ],
+                ),
+              );
             },
           ),
         ),
@@ -72,10 +110,10 @@ class FamilyDetails extends StatelessWidget {
 class FoodItem extends StatelessWidget {
   const FoodItem({
     Key? key,
-    required this.index,
+    required this.item,
   }) : super(key: key);
 
-  final int index;
+  final type.FoodItem item;
 
   @override
   Widget build(BuildContext context) {
@@ -90,15 +128,15 @@ class FoodItem extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            'المادة الغذائية ${index + 1}',
+            item.name,
             style: const TextStyle(
                 fontSize: 16,
                 color: Color(0xff858585),
                 fontWeight: FontWeight.bold),
           ),
-          const Text(
-            '- - -',
-            style: TextStyle(
+          Text(
+            '${item.count} ${getPrefix(item.name)}',
+            style: const TextStyle(
                 fontSize: 16,
                 color: Color(0xff858585),
                 fontWeight: FontWeight.bold),

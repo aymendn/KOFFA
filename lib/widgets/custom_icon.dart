@@ -57,12 +57,7 @@ class CustomIcon extends StatelessWidget {
         ),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(50),
-          gradient: isGradient
-              ? const LinearGradient(
-                  colors: [kBlueColor, kBlueColorLight],
-                )
-              : null,
-          color: isGradient ? null : color,
+          color: isGradient ? kButtonColor : color,
           boxShadow: isShadow
               ? const [
                   BoxShadow(
