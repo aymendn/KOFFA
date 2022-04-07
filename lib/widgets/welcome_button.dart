@@ -20,6 +20,7 @@ class WelcomeButton extends StatelessWidget {
       },
       child: Text(text),
       style: ElevatedButton.styleFrom(
+        minimumSize: const Size(210, 55),
         primary: kWhiteColor,
         onPrimary: kTextLightColor,
         elevation: 5,

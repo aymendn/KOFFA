@@ -1,0 +1,130 @@
+Date : 2022-04-07 09:26:22
+Directory : c:\Users\Administrator\Desktop\KOFFA
+Total : 64 files,  2703 codes, 267 comments, 391 blanks, all 3361 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| Dart       |         30 |      1,756 |         38 |        184 |      1,978 |
+| C++        |         11 |        405 |         80 |        132 |        617 |
+| JSON       |          3 |        180 |          0 |          3 |        183 |
+| XML        |          9 |        123 |         46 |         11 |        180 |
+| Groovy     |          3 |         88 |          3 |         22 |        113 |
+| HTML       |          1 |         80 |         18 |          7 |        105 |
+| YAML       |          2 |         44 |         81 |         21 |        146 |
+| Swift      |          1 |         12 |          0 |          2 |         14 |
+| Properties |          2 |          8 |          1 |          2 |         11 |
+| Markdown   |          2 |          7 |          0 |          7 |         14 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                               | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                  |         64 |      2,703 |        267 |        391 |      3,361 |
+| android                                                                                            |         12 |        158 |         48 |         33 |        239 |
+| android\app                                                                                        |          8 |        115 |         47 |         22 |        184 |
+| android\app\src                                                                                    |          7 |         62 |         44 |          9 |        115 |
+| android\app\src\debug                                                                              |          1 |          4 |          3 |          1 |          8 |
+| android\app\src\main                                                                               |          5 |         54 |         38 |          7 |         99 |
+| android\app\src\main\res                                                                           |          4 |         26 |         32 |          6 |         64 |
+| android\app\src\main\res\drawable                                                                  |          1 |          4 |          7 |          2 |         13 |
+| android\app\src\main\res\drawable-v21                                                              |          1 |          4 |          7 |          2 |         13 |
+| android\app\src\main\res\values                                                                    |          1 |          9 |          9 |          1 |         19 |
+| android\app\src\main\res\values-night                                                              |          1 |          9 |          9 |          1 |         19 |
+| android\app\src\profile                                                                            |          1 |          4 |          3 |          1 |          8 |
+| android\gradle                                                                                     |          1 |          5 |          1 |          1 |          7 |
+| android\gradle\wrapper                                                                             |          1 |          5 |          1 |          1 |          7 |
+| ios                                                                                                |          7 |        222 |          2 |          9 |        233 |
+| ios\Runner                                                                                         |          7 |        222 |          2 |          9 |        233 |
+| ios\Runner\Assets.xcassets                                                                         |          3 |        148 |          0 |          4 |        152 |
+| ios\Runner\Assets.xcassets\AppIcon.appiconset                                                      |          1 |        122 |          0 |          1 |        123 |
+| ios\Runner\Assets.xcassets\LaunchImage.imageset                                                    |          2 |         26 |          0 |          3 |         29 |
+| ios\Runner\Base.lproj                                                                              |          2 |         61 |          2 |          2 |         65 |
+| lib                                                                                                |         29 |      1,742 |         28 |        177 |      1,947 |
+| lib\clippers                                                                                       |          2 |        113 |          0 |         11 |        124 |
+| lib\providers                                                                                      |          2 |        141 |          0 |         17 |        158 |
+| lib\screens                                                                                        |         13 |        970 |         10 |         77 |      1,057 |
+| lib\screens\home                                                                                   |          3 |        135 |          0 |         12 |        147 |
+| lib\screens\home\components                                                                        |          2 |         67 |          0 |          8 |         75 |
+| lib\screens\needy_demand_screen                                                                    |          4 |        297 |         10 |         21 |        328 |
+| lib\screens\needy_demand_screen\components                                                         |          3 |        208 |         10 |         16 |        234 |
+| lib\widgets                                                                                        |          9 |        420 |         16 |         51 |        487 |
+| test                                                                                               |          1 |         14 |         10 |          7 |         31 |
+| web                                                                                                |          2 |        115 |         18 |          8 |        141 |
+| windows                                                                                            |         10 |        404 |         80 |        131 |        615 |
+| windows\flutter                                                                                    |          2 |          8 |          9 |         11 |         28 |
+| windows\runner                                                                                     |          8 |        396 |         71 |        120 |        587 |
++----------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                           | language   | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\Administrator\Desktop\KOFFA\README.md                                                     | Markdown   |          4 |          0 |          5 |          9 |
+| c:\Users\Administrator\Desktop\KOFFA\analysis_options.yaml                                         | YAML       |          3 |         23 |          4 |         30 |
+| c:\Users\Administrator\Desktop\KOFFA\android\app\build.gradle                                      | Groovy     |         53 |          3 |         13 |         69 |
+| c:\Users\Administrator\Desktop\KOFFA\android\app\src\debug\AndroidManifest.xml                     | XML        |          4 |          3 |          1 |          8 |
+| c:\Users\Administrator\Desktop\KOFFA\android\app\src\main\AndroidManifest.xml                      | XML        |         28 |          6 |          1 |         35 |
+| c:\Users\Administrator\Desktop\KOFFA\android\app\src\main\res\drawable-v21\launch_background.xml   | XML        |          4 |          7 |          2 |         13 |
+| c:\Users\Administrator\Desktop\KOFFA\android\app\src\main\res\drawable\launch_background.xml       | XML        |          4 |          7 |          2 |         13 |
+| c:\Users\Administrator\Desktop\KOFFA\android\app\src\main\res\values-night\styles.xml              | XML        |          9 |          9 |          1 |         19 |
+| c:\Users\Administrator\Desktop\KOFFA\android\app\src\main\res\values\styles.xml                    | XML        |          9 |          9 |          1 |         19 |
+| c:\Users\Administrator\Desktop\KOFFA\android\app\src\profile\AndroidManifest.xml                   | XML        |          4 |          3 |          1 |          8 |
+| c:\Users\Administrator\Desktop\KOFFA\android\build.gradle                                          | Groovy     |         27 |          0 |          5 |         32 |
+| c:\Users\Administrator\Desktop\KOFFA\android\gradle.properties                                     | Properties |          3 |          0 |          1 |          4 |
+| c:\Users\Administrator\Desktop\KOFFA\android\gradle\wrapper\gradle-wrapper.properties              | Properties |          5 |          1 |          1 |          7 |
+| c:\Users\Administrator\Desktop\KOFFA\android\settings.gradle                                       | Groovy     |          8 |          0 |          4 |         12 |
+| c:\Users\Administrator\Desktop\KOFFA\ios\Runner\AppDelegate.swift                                  | Swift      |         12 |          0 |          2 |         14 |
+| c:\Users\Administrator\Desktop\KOFFA\ios\Runner\Assets.xcassets\AppIcon.appiconset\Contents.json   | JSON       |        122 |          0 |          1 |        123 |
+| c:\Users\Administrator\Desktop\KOFFA\ios\Runner\Assets.xcassets\LaunchImage.imageset\Contents.json | JSON       |         23 |          0 |          1 |         24 |
+| c:\Users\Administrator\Desktop\KOFFA\ios\Runner\Assets.xcassets\LaunchImage.imageset\README.md     | Markdown   |          3 |          0 |          2 |          5 |
+| c:\Users\Administrator\Desktop\KOFFA\ios\Runner\Base.lproj\LaunchScreen.storyboard                 | XML        |         36 |          1 |          1 |         38 |
+| c:\Users\Administrator\Desktop\KOFFA\ios\Runner\Base.lproj\Main.storyboard                         | XML        |         25 |          1 |          1 |         27 |
+| c:\Users\Administrator\Desktop\KOFFA\ios\Runner\Runner-Bridging-Header.h                           | C++        |          1 |          0 |          1 |          2 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\clippers\clip_shadow_path.dart                            | Dart       |         42 |          0 |          8 |         50 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\clippers\custom_clippers.dart                             | Dart       |         71 |          0 |          3 |         74 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\constants.dart                                            | Dart       |         29 |          0 |          9 |         38 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\logic.dart                                                | Dart       |         10 |          0 |          1 |         11 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\main.dart                                                 | Dart       |         59 |          2 |         11 |         72 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\providers\food.dart                                       | Dart       |         31 |          0 |          6 |         37 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\providers\foods.dart                                      | Dart       |        110 |          0 |         11 |        121 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\screens\about_screen.dart                                 | Dart       |         43 |          0 |          5 |         48 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\screens\confirmation_screen.dart                          | Dart       |         96 |          0 |         10 |        106 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\screens\demand_screen.dart                                | Dart       |         76 |          0 |          5 |         81 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\screens\families_screen.dart                              | Dart       |        107 |          0 |          8 |        115 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\screens\family_details.dart                               | Dart       |        103 |          0 |          8 |        111 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\screens\home\components\middle_buttons.dart               | Dart       |         43 |          0 |          4 |         47 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\screens\home\components\top_logo.dart                     | Dart       |         24 |          0 |          4 |         28 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\screens\home\home_screen.dart                             | Dart       |         68 |          0 |          4 |         72 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\screens\needy_demand_screen\components\category_row.dart  | Dart       |         48 |          0 |          5 |         53 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\screens\needy_demand_screen\components\credits.dart       | Dart       |         49 |          0 |          5 |         54 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\screens\needy_demand_screen\components\item_card.dart     | Dart       |        111 |         10 |          6 |        127 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\screens\needy_demand_screen\needy_demand_screen.dart      | Dart       |         89 |          0 |          5 |         94 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\screens\report_screen.dart                                | Dart       |        113 |          0 |          8 |        121 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\widgets\bold_title.dart                                   | Dart       |         24 |          0 |          5 |         29 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\widgets\bottom_buttons.dart                               | Dart       |         62 |          0 |          5 |         67 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\widgets\clippers.dart                                     | Dart       |         28 |         16 |         10 |         54 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\widgets\custom_appbar.dart                                | Dart       |         25 |          0 |          5 |         30 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\widgets\custom_background.dart                            | Dart       |         57 |          0 |          5 |         62 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\widgets\custom_icon.dart                                  | Dart       |         75 |          0 |          5 |         80 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\widgets\requested_item.dart                               | Dart       |         75 |          0 |          6 |         81 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\widgets\top_header.dart                                   | Dart       |         40 |          0 |          5 |         45 |
+| c:\Users\Administrator\Desktop\KOFFA\lib\widgets\welcome_button.dart                               | Dart       |         34 |          0 |          5 |         39 |
+| c:\Users\Administrator\Desktop\KOFFA\pubspec.yaml                                                  | YAML       |         41 |         58 |         17 |        116 |
+| c:\Users\Administrator\Desktop\KOFFA\test\widget_test.dart                                         | Dart       |         14 |         10 |          7 |         31 |
+| c:\Users\Administrator\Desktop\KOFFA\web\index.html                                                | HTML       |         80 |         18 |          7 |        105 |
+| c:\Users\Administrator\Desktop\KOFFA\web\manifest.json                                             | JSON       |         35 |          0 |          1 |         36 |
+| c:\Users\Administrator\Desktop\KOFFA\windows\flutter\generated_plugin_registrant.cc                | C++        |          3 |          4 |          5 |         12 |
+| c:\Users\Administrator\Desktop\KOFFA\windows\flutter\generated_plugin_registrant.h                 | C++        |          5 |          5 |          6 |         16 |
+| c:\Users\Administrator\Desktop\KOFFA\windows\runner\flutter_window.cpp                             | C++        |         45 |          4 |         13 |         62 |
+| c:\Users\Administrator\Desktop\KOFFA\windows\runner\flutter_window.h                               | C++        |         20 |          5 |          9 |         34 |
+| c:\Users\Administrator\Desktop\KOFFA\windows\runner\main.cpp                                       | C++        |         30 |          4 |         10 |         44 |
+| c:\Users\Administrator\Desktop\KOFFA\windows\runner\resource.h                                     | C++        |          9 |          6 |          2 |         17 |
+| c:\Users\Administrator\Desktop\KOFFA\windows\runner\utils.cpp                                      | C++        |         53 |          2 |         10 |         65 |
+| c:\Users\Administrator\Desktop\KOFFA\windows\runner\utils.h                                        | C++        |          8 |          6 |          6 |         20 |
+| c:\Users\Administrator\Desktop\KOFFA\windows\runner\win32_window.cpp                               | C++        |        183 |         15 |         48 |        246 |
+| c:\Users\Administrator\Desktop\KOFFA\windows\runner\win32_window.h                                 | C++        |         48 |         29 |         22 |         99 |
+| Total                                                                                              |            |      2,703 |        267 |        391 |      3,361 |
++----------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

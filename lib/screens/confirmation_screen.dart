@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../widgets/bold_title.dart';
 import '../widgets/bottom_buttons.dart';
-import '../widgets/clippers.dart';
 
+import '../widgets/custom_appbar.dart';
 import '/constants.dart';
 import 'needy_demand_screen/needy_demand_screen.dart';
 
@@ -21,12 +21,20 @@ class ConfirmationScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Align(alignment: Alignment.topLeft, child: TopLogo()),
-              const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 45, vertical: 5),
-                child: Middle(),
+              const CustomAppBar(
+                height: 90,
+                child: Center(
+                  child: BoldTitle(
+                    text: 'تأكيد الهوية',
+                  ),
+                ),
               ),
-              const Spacer(),
+              const Expanded(
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 45, vertical: 5),
+                  child: Middle(),
+                ),
+              ),
               BottomButtons(
                 isHomeButton: false,
                 textButtonWidth: 135,
@@ -56,6 +64,7 @@ class Middle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         const BoldTitle(
           text: 'إمسح الكود',
@@ -71,33 +80,10 @@ class Middle extends StatelessWidget {
         ),
         const SizedBox(height: 20),
         Image.asset(
-          'assets/images/scan-frame.png',
+          'assets/images/qr.png',
           width: double.infinity,
           height: 248,
           alignment: Alignment.topCenter,
-        ),
-      ],
-    );
-  }
-}
-
-class TopLogo extends StatelessWidget {
-  const TopLogo({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Stack(
-      alignment: Alignment.topLeft,
-      children: const [
-        ClipperSmallTop(),
-        Positioned(
-          top: 17,
-          left: 30,
-          child: BoldTitle(
-            text: 'تأكيد الهوية',
-          ),
         ),
       ],
     );

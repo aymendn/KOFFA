@@ -110,6 +110,15 @@ class FoodList with ChangeNotifier {
     notifyListeners();
   }
 
+  bool get isItEmpty {
+    for (var food in foods) {
+      if (food.count != 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+
   void clear() {
     initial = _credits;
     for (var food in foods) {

@@ -3,13 +3,15 @@ import 'package:flutter/material.dart';
 const kBackgroundColor = Color(0xFFF1EFF1);
 
 const kPrimaryColorDarker = Color(0xff21A5B7);
-const kPrimaryColor = Color(0xff88BAB2);
+const kPrimaryColor = Color(0xff074B54);
+const kButtonColor = Color(0xff21A5B7);
 const kPrimaryColorDark = Color(0xff589F93);
 const kPrimaryColorLight = Color(0xffA9CEC7);
 const kTextLightColor = Color(0xFF656565);
 const kWhiteColor = Color(0xFFFFFFFF);
 const kBlueColor = Color(0xFF21A5B7);
 const kBlueColorLight = Color(0xFF85C9D1);
+const kErrorColor = Color.fromARGB(255, 247, 77, 77);
 
 const kDefaultPadding = 20.0;
 
@@ -19,6 +21,7 @@ const kTitleStyle = TextStyle(
   color: kTextLightColor,
 );
 const kTextStyle = TextStyle(
+  fontFamily: 'Cairo',
   fontSize: 14,
   fontWeight: FontWeight.bold,
   color: kTextLightColor,
