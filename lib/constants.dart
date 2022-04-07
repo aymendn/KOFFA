@@ -11,6 +11,7 @@ const kTextLightColor = Color(0xFF656565);
 const kWhiteColor = Color(0xFFFFFFFF);
 const kBlueColor = Color(0xFF21A5B7);
 const kBlueColorLight = Color(0xFF85C9D1);
+const kErrorColor = Color.fromARGB(255, 247, 77, 77);
 
 const kDefaultPadding = 20.0;
 
